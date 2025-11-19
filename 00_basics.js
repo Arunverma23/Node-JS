@@ -1,66 +1,76 @@
+// import { userName } from "./01_data"; valid for Js but not directly supported in node js
 
-// Keywords used to decalre variables
+// -> 1) 
+// const data  = require('./01_data'); 
+const {userName} = require('./01_data');
 
-let a = 13;
-var b = 87;
-const c = a+b;
+console.log(userName);
 
-console.log(a+b,c);
 
-// if statement
 
-if(a == 200){
-    console.log("This is if condition");
-}
 
-// Function
+// // Keywords used to decalre variables
 
-function developer(category){
-    console.log(`I am ${category} Developer`);
-}
+// let a = 13;
+// var b = 87;
+// const c = a+b;
 
-developer('Backend');
-developer('Frontend');
+// console.log(a+b,c);
 
-// For Loop 
+// // if statement
 
-for(var i=0;i<=10;i++){
-    console.log(i);
-}
+// if(a == 200){
+//     console.log("This is if condition");
+// }
 
-// While Loop
+// // Function
 
-while(i<=20){
-    console.log(i);
-    i++;
-}
+// function developer(category){
+//     console.log(`I am ${category} Developer`);
+// }
 
-// Do While Loop
+// developer('Backend');
+// developer('Frontend');
 
-do {
-    console.log("I am Do While Loop");
-} while (false);
+// // For Loop 
 
-// Array
+// for(var i=0;i<=10;i++){
+//     console.log(i);
+// }
 
-var users = ["Arun","Alex","Elon","Bruce"];
-console.log(users[0]);
+// // While Loop
 
-for(var user=0;user<users.length;user++){
-    console.log(`I am the ${user}th ${users[user]}`);
-}
+// while(i<=20){
+//     console.log(i);
+//     i++;
+// }
 
-// Object
+// // Do While Loop
 
-var user_details = {
-    name : {
-        full_name : 'Arun',
-        last_name : 'Verma'
-    },
-    Age : '21'
-}
+// do {
+//     console.log("I am Do While Loop");
+// } while (false);
 
-console.log(`My Full Name is ${user_details.name.full_name + ` ${user_details.name.last_name}`}
-I am ${user_details.Age}`);
+// // Array
+
+// var users = ["Arun","Alex","Elon","Bruce"];
+// console.log(users[0]);
+
+// for(var user=0;user<users.length;user++){
+//     console.log(`I am the ${user}th ${users[user]}`);
+// }
+
+// // Object
+
+// var user_details = {
+//     name : {
+//         full_name : 'Arun',
+//         last_name : 'Verma'
+//     },
+//     Age : '21'
+// }
+
+// console.log(`My Full Name is ${user_details.name.full_name + ` ${user_details.name.last_name}`}
+// I am ${user_details.Age}`);
 
 
