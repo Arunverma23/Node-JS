@@ -4,3 +4,6 @@ const c = a+b;
 
 console.log(a+b,c);
 
+if(a == 200){
+    console.log("this is if condition");
+}
