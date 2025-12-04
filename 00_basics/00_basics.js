@@ -6,9 +6,6 @@ const {userName} = require('./01_data');
 
 console.log(userName);
 
-
-
-
 // // Keywords used to decalre variables
 
 // let a = 13;

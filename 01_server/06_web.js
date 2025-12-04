@@ -2,10 +2,10 @@ const http = require("http");
 const fs = require('fs');
 
 http.createServer((req,resp)=>{
-    fs.readFile('html/index.html','utf-8',(err,data)=>{
+    fs.readFile('./html/index.html','utf-8',(err,data)=>{
         if(err){
             resp.writeHead(500,{"content-type":'text/plain'});
-            resp.writable('internal server error');
+            resp.write('internal server error');
             resp.end();
             return;
         }
