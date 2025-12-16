@@ -1,0 +1,30 @@
+import express from 'express'
+const app = express()
+
+app.get('/', (req, res) => {
+    const users = ['Arun','Varun']
+
+    let data = `<ul>`
+
+    for(let i=0;i<users.length;i++) {
+
+        data+=`<li>
+        <a href="/user/${users[i]}">
+        ${users[i]}</a>
+        </li>`
+
+        console.log(users[i])
+    }
+
+    data+=`</ul>`
+
+    res.send(data)
+})
+
+app.get("/user/:name",(req, res) => {
+    console.log(req.params.name)
+    const userName = req.params.name
+    res.send(`this is ${userName} profile page`)
+})
+
+app.listen(5100)
